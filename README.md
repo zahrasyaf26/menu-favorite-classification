@@ -13,7 +13,7 @@ Dibangun menggunakan algoritma **Decision Tree (ID3)**, Flutter untuk aplikasi m
 - Confusion Matrix (evaluasi model)
 
 ## 📊 Hasil
-- Akurasi model: XX% (berdasarkan confusion matrix)
+- Akurasi model: 70%-80% (berdasarkan confusion matrix)
 - Output: daftar 5 menu favorit + visualisasi decision tree
 
 ## 📂 Struktur
