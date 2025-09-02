@@ -1,0 +1,48 @@
+name: bismillah_yang_ini_beneran_berhasil
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  excel: ^4.0.6
+  path_provider: ^2.0.15
+  provider: ^6.1.2
+  open_file: ^3.2.1
+  file_picker: ^8.1.7
+  csv: ^5.0.0
+  shared_preferences: ^2.1.0
+  intl: ^0.18.0
+  cupertino_icons: ^1.0.8
+  fl_chart: ^0.65.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.8
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/decision_tree_structure.json
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/logo.png
+  android: true
+  ios: true
+  fullscreen: true
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+  remove_alpha_ios: true

@@ -1,0 +1,45 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.bismillah_yang_ini_beneran_berhasil"
+    compileSdk = 34  // Ubah dari flutter.compileSdkVersion ke angka langsung
+
+    ndkVersion = "25.2.9519653" // Pastikan ndkVersion yang kompatibel
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17 // Ubah dari JavaVersion.VERSION_1_8 ke 17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17" // Pastikan Kotlin menggunakan JVM 17
+    }
+
+    defaultConfig {
+        applicationId = "com.example.bismillah_yang_ini_beneran_berhasil"
+        minSdk = 21 // Sesuaikan jika diperlukan
+        targetSdk = 34  // Ubah dari flutter.targetSdkVersion ke angka langsung
+        versionCode = 1
+        versionName = "1.0"
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true  // Aktifkan ProGuard/R8
+            shrinkResources true  // Aktifkan penghapusan resource tidak terpakai
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
